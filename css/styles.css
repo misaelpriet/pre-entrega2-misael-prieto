@@ -258,10 +258,27 @@ header {
     color: #395144;
 }
 
+.minibanner {
+    max-width: 750px;
+    margin: 80px auto;
+    padding: 60px 40px 60px 40px;
+    background-color: #395144;
+    border-radius: 5px;
+}
+
+.minibanner p {
+    color: #F0EBCE;
+    font-size: 20px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
+    .hero-index h1 {font-size: 50px;}
     .header .navbar {order: 1;}
     .header .logo {order: 2;}
     .header .boton {display: none;}
     .header {justify-content: space-between;}
-    .pedido {display: flex; flex-wrap: wrap;}
+    .pedido {display: flex; justify-content: center; flex-direction: column; flex-wrap: nowrap;}
+    .div-pizza {flex-direction: column;}
+    .tu-orden {display: none;}
 }
