@@ -87,7 +87,7 @@ header {
     font-family: 'Outfit', sans-serif;
     color: #4E6C50;
     font-size: 30px;
-    padding: 80px 55px;
+    padding: 60px 55px;
 }
 
 .pedido {
@@ -174,7 +174,7 @@ header {
 
 .tu-orden {
     background-color: #AA8B56;
-    border-radius: 200px 200px 2px 2px;
+    border-radius: 130px 130px 5px 5px;
     padding: 0 30px 0 30px;
     margin-left: 30px;
     margin-right: 10px;
@@ -258,18 +258,81 @@ header {
     color: #395144;
 }
 
-.minibanner {
-    max-width: 750px;
-    margin: 80px auto;
-    padding: 60px 40px 60px 40px;
-    background-color: #395144;
+.orden-mobile {
+    background-color: #AA8B56;
+    border-radius: 80px 80px 0 0;
+    padding: 40px 30px 25px 30px;
+    margin-top: 70px;
+    display: none;
+}
+
+.pedido-mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.orden-mobile img {
+    height: 50px;
+}
+
+.pedido-mob p {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.btn-pedido-mob a {
+    background-color: #4E6C50;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: white;
     border-radius: 5px;
+    display: flex;
+    justify-content:center;
+}
+
+.minibanner {
+    background-image: linear-gradient(rgba(57, 81, 68, 0.8), rgba(57, 81, 68, 0.8)), url(/recursos/pizza-bg-1.png);
+    height: 350px;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .minibanner p {
-    color: #F0EBCE;
-    font-size: 20px;
+    color: white;
+    font-size: 24px;
     text-align: center;
+}
+
+footer {
+    background-color: #F0EBCE;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer li {
+    margin: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.footer a {
+    color: #4E6C50;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -278,7 +341,10 @@ header {
     .header .logo {order: 2;}
     .header .boton {display: none;}
     .header {justify-content: space-between;}
-    .pedido {display: flex; justify-content: center; flex-direction: column; flex-wrap: nowrap;}
+    .pedido {display: flex; justify-content: center; flex-direction: column; flex-wrap: wrap;}
     .div-pizza {flex-direction: column;}
     .tu-orden {display: none;}
+    .orden-mobile {display: block;}
+    .minibanner {margin-top: 0;}
+    .minibanner p {font-size: 16px;}
 }
