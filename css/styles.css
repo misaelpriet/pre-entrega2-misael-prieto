@@ -229,9 +229,39 @@ header {
     justify-content: space-between;
 }
 
+.precio-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precio-total p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.tu-orden a {
+    background-color: #4E6C50;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content:center;
+}
+
+.tu-orden a:hover {
+    background-color: #F0EBCE;
+    color: #395144;
+}
+
 @media (max-width: 768px) {
     .header .navbar {order: 1;}
     .header .logo {order: 2;}
     .header .boton {display: none;}
     .header {justify-content: space-between;}
+    .pedido {display: flex; flex-wrap: wrap;}
 }
