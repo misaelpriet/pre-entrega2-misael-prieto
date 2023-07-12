@@ -5,6 +5,8 @@
     padding: 0px;
 }
 
+/* INDEX */
+
 header {
     background-color: #F0EBCE;
     padding: 30px;
@@ -62,14 +64,11 @@ header {
     scale: 1.05;
 }
 
-.main .hero-index {
+main .hero-index {
     background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/8514_background_1984x900.jpeg);
     height: 650px;
     background-size: cover;
     background-position: center center;
-}
-
-.hero-index {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +93,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "pizza1 pizza2 pizza3 tu-orden"
     "pizza4 pizza5 pizza6 tu-orden"
     ;
@@ -135,11 +134,13 @@ header {
     border: 1px #AA8B56 solid;
     border-radius: 100px 100px 2px 2px;
     margin: 0 10px 30px 10px;
+    width: 250px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .div-pizza img {
@@ -163,6 +164,7 @@ header {
     font-size: 14px;
     font-weight: 300;
     padding: 5px 15px;
+    margin-top: 20px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
@@ -312,6 +314,7 @@ header {
     color: white;
     font-size: 24px;
     text-align: center;
+    padding: 0 30px 0 30px;
 }
 
 footer {
@@ -333,6 +336,43 @@ footer {
 .footer a {
     color: #4E6C50;
     text-decoration: none;
+}
+
+/* MENÚ */
+
+main .hero-menu {
+    background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/8514_background_1984x900.jpeg);
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pizzasMenu {
+    width: 1300px;
+    margin: auto;
+}
+
+.hero-menu h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 40px;
+}
+
+section .pizzasClasicas, .pizzasEspeciales {
+    width: 100%;
+    display: flex;
+}
+
+.pizzasMenu h2 {
+    font-family: 'Outfit', sans-serif;
+    color: #4E6C50;
+    font-size: 30px;
+    padding: 60px 0 55px 0;
 }
 
 @media (max-width: 768px) {
