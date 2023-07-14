@@ -151,11 +151,13 @@ main .hero-index {
 .div-pizza h3 {
     font-family: 'Outfit', sans-serif;
     color: #395144;
+    margin-bottom: 20px;
 }
 
 .div-pizza p {
     font-size: 12px;
     text-align: center;
+    font-family: 'Outfit', sans-serif;
 }
 
 .div-pizza a {
@@ -340,8 +342,8 @@ footer {
 
 /* MENÚ */
 
-main .hero-menu {
-    background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/8514_background_1984x900.jpeg);
+main .hero-menu, .hero-hist {
+    background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(/recursos/pizza-bg-2.png);
     height: 300px;
     background-size: cover;
     background-position: center center;
@@ -352,7 +354,7 @@ main .hero-menu {
 }
 
 .pizzasMenu {
-    width: 1300px;
+    max-width: 1300px;
     margin: auto;
 }
 
@@ -363,28 +365,80 @@ main .hero-menu {
     font-size: 40px;
 }
 
-section .pizzasClasicas, .pizzasEspeciales {
+section .pizzasClasicas, .pizzasEspeciales, .pizzasPizzano {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .pizzasMenu h2 {
     font-family: 'Outfit', sans-serif;
     color: #4E6C50;
     font-size: 30px;
-    padding: 60px 0 55px 0;
+    padding: 60px 0 55px 50px;
+}
+
+.orden-gral {
+    max-width: 100%;
+    background-color: #AA8B56;
+    border-radius: 80px 80px 0 0;
+    padding: 40px 30px 25px 30px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.orden-gral img{
+    height: 50px;
+}
+
+.orden-gral p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.btn-pedido-gral a{
+    background-color: #4E6C50;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 10px 50px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content:center;
+}
+
+.btn-pedido-gral a:hover{
+    background-color: #F0EBCE;
+    color: #395144;
+}
+
+/* HISTORIA */
+
+.hero-hist h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 40px;
 }
 
 @media (max-width: 768px) {
-    .hero-index h1 {font-size: 50px;}
+    .header img, .footer img {width: 140px;}
+    .hero-index h1 {font-size: 35px;}
     .header .navbar {order: 1;}
     .header .logo {order: 2;}
     .header .boton {display: none;}
     .header {justify-content: space-between;}
-    .pedido {display: flex; justify-content: center; flex-direction: column; flex-wrap: wrap;}
+    .pedido, .pizzasClasicas, .pizzasEspeciales, .pizzasPizzano {display: flex; justify-content: center; flex-direction: column; flex-wrap: wrap; align-content: center;}
     .div-pizza {flex-direction: column;}
     .tu-orden {display: none;}
     .orden-mobile {display: block;}
     .minibanner {margin-top: 0;}
     .minibanner p {font-size: 16px;}
+    .pizzasMenu h2 {padding: 60px 0 55px 20px;}
+    .orden-gral {display: block;;}
+    .orden-gral p{font-size: 16px;}
 }
