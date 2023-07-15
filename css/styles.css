@@ -490,7 +490,7 @@ section .pizzasClasicas,
   .galeria-4 { grid-area: galeria-4; }
 
 .galeriaHist img {
-    width: 350px;
+    width: 360px;
 }
 
 .orden-gral {
